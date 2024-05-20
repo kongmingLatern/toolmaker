@@ -1,19 +1,20 @@
 import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
-	test: {
-		globals: true,
-	},
-	build: {
-		lib: {
-			entry: './lib/main.ts',
-			name: 'Counter',
-			fileName: 'counter',
-		},
-	},
-	resolve: {
-		alias: {
-			'@': '/src',
-		},
-	},
+  test: {
+    globals: true,
+  },
+  build: {
+    lib: {
+      // TODO: This should be a string
+      entry: './lib/index.ts',
+      name: 'toolmaker',
+      fileName: 'toolmaker',
+    },
+  },
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
+  },
 })
