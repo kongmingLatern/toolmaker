@@ -1,6 +1,6 @@
 export function formatResponseType(
   response: Record<string, any>,
-  targetDataType?: any,
+  _?: any,
 ) {
   return response
 }
