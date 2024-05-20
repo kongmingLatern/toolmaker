@@ -18,9 +18,12 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
-		"test": "vitest"
+		"test": "vitest",
+		"test:run": "vitest run",
+		"prepare": "husky"
 	},
 	"devDependencies": {
+		"husky": "^9.0.11",
 		"typescript": "^5.4.5",
 		"vite": "^5.2.10",
 		"vitest": "^1.6.0"
